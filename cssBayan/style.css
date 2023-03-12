@@ -9,6 +9,8 @@ h1 {text-align: center;}
     display:flex;
     justify-content: space-between;
 }
+.avs_head_text {color:rgb(149, 11, 143);}
+.avs_cross_img {visibility:hidden;}
 
 .avs_bayan_wrapper {width:100%;}
 .avs_memes_img {max-height: 250px; max-width: 100%;}
@@ -27,5 +29,8 @@ h1 {text-align: center;}
 }
 .avs_wSubMenu {}
 
+.avs_hideCheck {display:none;} /* hide chekbox and radio */
 
-.avs_hideCheck {display:none;} /* hide chekbox */
+
+.avs_bayan_inner:hover .avs_head_text {color: rgb(0,0,0);}
+.avs_bayan_inner:hover .avs_cross_img {visibility:visible;}
