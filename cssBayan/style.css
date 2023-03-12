@@ -46,6 +46,7 @@ h1 {text-align: center;}
 
 @media (hover:hover) {
     .avs_wSubMenu:hover {cursor: pointer;}
+    .avs_wSubMenu label:hover {cursor: pointer;}
 
     /* show cross-image and change color of header */
     .avs_bayan_inner:hover .avs_head_text {color: rgb(0,0,0);}
