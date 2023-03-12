@@ -39,8 +39,10 @@ h1 {text-align: center;}
     box-sizing: border-box;
 }
 .avs_wSubMenu {}
+.avs_wSubMenu:hover {cursor: pointer;}
 
-.avs_hideCheck {display:none;} /* hide chekbox and radio */
+/* hide radio */
+.avs_hideCheck {display: none;} 
 
 /* show cross-image and change color of header */
 .avs_bayan_inner:hover .avs_head_text {color: rgb(0,0,0);}
@@ -49,6 +51,7 @@ h1 {text-align: center;}
     transition: 0.15s ease-out 0.15s;
 }
 
+/* show memes by hover */
 .avs_wSubMenu:hover .avs_img_wrapper {
     display: flex;
     transition: 0.15s ease-out 0.15s;
@@ -61,3 +64,21 @@ h1 {text-align: center;}
     transform: rotate(45deg);
     transition: 0.15s ease-out 0.15s;
 }
+
+/* show checked memes */
+.avs_wSubMenu :checked ~ label .avs_img_wrapper {
+    display: flex;
+    transition: 0.15s ease-out 0.15s;
+}
+.avs_wSubMenu :checked ~ label .avs_memes_img {
+    max-height: 250px;
+    transition: 0.15s ease-out 0.15s;
+}
+.avs_wSubMenu :checked ~ label .avs_cross_img {
+    transform: rotate(45deg);
+    transition: 0.15s ease-out 0.15s;
+}
+.avs_wSubMenu :checked ~ label .avs_head_text {
+    color: rgb(0,0,0);
+}
+
