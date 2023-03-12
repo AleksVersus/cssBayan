@@ -8,12 +8,22 @@ h1 {text-align: center;}
 .avs_head {
     display:flex;
     justify-content: space-between;
+    border-top: 1px solid rgb(0,0,0,0.2);
+    padding-top: 0.25em;
 }
 .avs_head_text {color:rgb(149, 11, 143);}
 .avs_cross_img {visibility:hidden;}
 
 .avs_bayan_wrapper {width:100%;}
-.avs_memes_img {max-height: 250px; max-width: 100%;}
+.avs_img_wrapper {
+    display:flex;
+    justify-content: center;
+    display:none;
+}
+.avs_memes_img {
+    max-height: 250px;
+    max-width: 100%;
+}
 
 
 .avs_bayan_inner {
